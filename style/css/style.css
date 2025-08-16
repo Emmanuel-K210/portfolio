@@ -43,13 +43,16 @@ nav {
   --border-or-separate-color: #8dcae3;
   --border-or-separate-color-alt: #a9daed;
   --interractive-component: #bee7f5;
+  --interractive-component-hover: #00000077;
   --background: #f1fafd;
   --margin-site: 10px;
   --gap: 20px;
   --none: 0;
   --width-90: 90%;
   --general-text-color: #9ac7f1;
+  --black : #000;
 }
+
 
 a {
   color: var(--second-text-color);
@@ -66,6 +69,7 @@ a {
   --interractive-component: #113555;
   --background: #0d141f;
   color: #ffffff;
+   --interractive-component-hover: #00000077;
 }
 
 * {
@@ -116,6 +120,7 @@ body {
 header {
   position: fixed;
   width: 100%;
+  background-color: var(--interractive-component);
   top: 0;
   left: 0;
   z-index: 1000;
@@ -219,6 +224,7 @@ li.service-item a.active::before {
   -ms-flex-pack: center;
   justify-content: center;
   gap: var(--gap);
+  color: #fff;
 }
 
 .greeting-text strong {
@@ -283,6 +289,10 @@ b {
   position: relative;
   width: 50%;
   height: 80%;
+}
+
+.bg-calque{
+    background: var(--interractive-component-hover);
 }
 
 .greeting-image {
@@ -426,7 +436,7 @@ h2 {
   background-color: var(--box-color);
   padding: 15px;
   border-radius: 15px;
-  color: var(--general-text-color);
+  color: var(--black);
 }
 
 h3 {

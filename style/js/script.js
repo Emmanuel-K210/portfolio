@@ -61,10 +61,7 @@ function changeTheme() {
 }
 
 function displayBg() {
-    if (window.scrollY < 100) {
-        header.style.backgroundColor = "transparent"
-        header.style.boxShadow = "none"
-    } else {
+   
         if (!body.classList.contains("dark-mod")) {
             const mainColor = rootStyle.getPropertyValue('--interractive-component').trim();
             header.style.backgroundColor = mainColor;
@@ -73,5 +70,4 @@ function displayBg() {
             header.style.backgroundColor = "#113555";
             header.style.boxShadow = " 0 2px 5px rgba(0, 0, 0, 0.1)";
         }
-    }
 }
