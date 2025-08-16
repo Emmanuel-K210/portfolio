@@ -50,9 +50,9 @@ function changeTheme() {
 
     setTimeout(() => {
         if (body.classList.contains("dark-mod")) { 
-            icon.src = "assets/icon/moon2.svg";
+            icon.src = "./assets/icon/moon2.svg";
         } else {
-            icon.src = "assets/icon/sun.svg";
+            icon.src = "./assets/icon/sun.svg";
         }
         icon.classList.remove("animate");
     }, 250);
