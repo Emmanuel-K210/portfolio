@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/style.min.css">
+    <title>portfolio</title>
+</head>
+
+<body>
+    <!--En tête du site -->
+    <header>
+        <nav class="header">
+            <span class="titre">Emmanuel Kouadio</span>
+            <ul class="service">
+                <li class="service-item"><a class="active" href="#accueil">Accueil</a></li>
+                <li class="service-item"><a href="#about">À propos</a></li>
+                <li class="service-item"><a href="#services">Services</a></li>
+                <li class="service-item"><a href="#projects">Projets</a></li>
+                <li class="service-item"><a href="#contact">Contact</a></li>
+                <li><button class="btn" id="toggle-theme"> <a><img class="icon" id="theme-icon"
+                                src="./assets/icon/sun.svg" width="20" height="20" /></a></button></li>
+            </ul>
+            <div class="menu-icon">
+                <img src="./assets/icon/menu-icon.svg" id="menu-icon" alt="menu-icon" width="30" height="30"/>
+            </div>
+        </nav>
+    </header>
+    <!--Section de presentation -->
+    <main class="container">
+        <section class="bg">
+            <div class="bg-calque">
+                <div class="section greeting" id="accueil">
+                    <div class="greeting-text">
+                        <strong>Bonjour, c'est <span>Emmanuel Kouadio</span></strong>
+                        <b>je suis developpeur <span id="element"></span></b>
+                        <p class="greeting-presentation">
+                            Développeur Java & Kotlin passionné, spécialisé dans la création d’applications Android
+                            modernes
+                            avec Jetpack Compose et le développement backend avec Spring Boot.
+                            Je conçois des solutions logicielles performantes et fiables adaptées aux besoins des
+                            entreprises.
+                        </p>
+                        <div class="greeting-social">
+                            <button type="button" class="btn"><a href="mailto:coderemmane210@gmail.com"
+                                    class="link">Email</a></button>
+                            <button type="button" class="btn"><a href="https://github.com/emmanuel-K210" class="link"
+                                    target="_blank">GitHub</a></button>
+                            <button type="button" class="btn"><a href="https://www.linkedin.com/in/emmanuel"
+                                    class="link" target="_blank">LinkedIn</a></button>
+                        </div>
+                        <button type="button" class="btn download"><a href="./assets/cv/mon_cv-temp.pdf"
+                                target="_blank">Télécharger CV</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--A propos de moi -->
+        <section id="about" class="section about">
+            <div class="about-containt">
+                <img src="./assets/images/about.jpg" alt="about me" id="img-about" width="400" height="400">
+                <div class="about-text">
+                    <h2 class="title">À propos</h2>
+                    <p>
+                        Je suis un développeur logiciel basé à Abidjan, avec 2 ans d’expérience dans la conception
+                        d’applications
+                        Java et Kotlin. J’ai travaillé sur des projets d’entreprise (logiciels internes, outils
+                        digitaux) et
+                        sur
+                        des applications Android modernes avec une architecture MVVM.
+                    </p>
+                    <p>
+                        Ma philosophie : écrire du code clair, maintenable et orienté bonnes pratiques, tout en
+                        continuant
+                        d’apprendre et d’expérimenter de nouvelles technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Mes services-->
+        <section id="services" class="section services">
+            <h2 class="title">Services</h2>
+            <ul>
+                <li class="serv-item">
+                    <img src="./assets/icon/back-vr.svg" alt="database" width="100" height="100">
+                    <h3>Développement Backend</h3>
+                    <p>Conception d’API REST sécurisées avec Java, Spring Boot et MySQL/PostgreSQL.</p>
+                </li>
+                <li class="serv-item">
+                    <img src="./assets/icon/android.svg" alt="database" width="100" height="100">
+                    <h3>Développement Android</h3>
+                    <p>Applications mobiles modernes avec Kotlin, Jetpack Compose et intégration d’API.</p>
+                </li>
+                <li class="serv-item">
+                    <img src="./assets/icon/system-line-s.svg" alt="database" width="100" height="100">
+                    <h3>Applications d’entreprise</h3>
+                    <p>Solutions logicielles adaptées aux besoins métiers (ERP, gestion scolaire, reporting PDF).</p>
+                </li>
+            </ul>
+        </section>
+        <!--Les projects réalisés-->
+        <section id="projects" class="section projects">
+            <h2 class="title">Projets</h2>
+            <div class="groups">
+                <div class="project">
+                    <img src="./assets/images/bancaire.jpg" alt="projet personnel">
+                    <h3>Application bancaire Android</h3>
+                    <p>Développement d'une application bancaire avec Kotlin & Jetpack Compose : gestion de comptes,
+                        transactions, tableau de bord avec graphiques.</p>
+                    <p><strong>Technologies :</strong> Kotlin, Jetpack Compose, MVVM, StateFlow</p>
+                    <a href="https://github.com/tonprofil/app-banque" target="_blank">Voir sur GitHub</a>
+                </div>
+
+                <div class="project">
+                    <img src="./assets/images/ecole.jpg" alt="projet personnel">
+                    <h3>API REST de gestion scolaire</h3>
+                    <p>Conception d'une API complète pour gérer élèves, classes et compositions.
+                        Génération de rapports PDF via iText.</p>
+                    <p><strong>Technologies :</strong> Java, Spring Boot, MySQL</p>
+                    <a href="https://github.com/tonprofil/api-gestion-scolaire" target="_blank">Voir sur GitHub</a>
+                </div>
+
+                <div class="project">
+                    <img src="./assets/images/entreprise.jpg" alt="projet entreprise">
+                    <h3>Logiciel interne d'entreprise (confidentiel)</h3>
+                    <p>Participation au développement d'un logiciel de gestion interne.
+                        Rôle : création de modules backend, optimisation de requêtes SQL et intégration de nouvelles
+                        fonctionnalités.</p>
+                    <p><strong>Technologies :</strong> Java, Spring Boot, PostgreSQL</p>
+                </div>
+            </div>
+        </section>
+        <!--La section de contact -->
+        <section id="contact" class="section contact">
+            <h2 class="title">Contact</h2>
+            <p>Intéressé par une collaboration ? N’hésitez pas à me contacter :</p>
+            <ul>
+                <li>Email : <a href="mailto:emmanuel.kouadio@email.com">coderemmane210@gmail.com</a></li>
+                <li>LinkedIn : <a href="https://www.linkedin.com/emmanuel-kouadio-938aa2379"
+                        target="_blank">linkedin.com/in/emmanuel-kouadio</a>
+                </li>
+                <li>GitHub : <a href="https://github.com/emmanuel-K210" target="_blank">github.com/emmanuel-K210</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./style/js/script.min.js"></script>
+</body>
+
+</html>
