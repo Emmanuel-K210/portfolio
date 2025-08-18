@@ -14,7 +14,7 @@
         <nav class="header">
             <span class="titre">Emmanuel Kouadio</span>
             <ul class="service">
-                <li class="service-item"><a class="active" href="#">Accueil</a></li>
+                <li class="service-item"><a class="active" href="#accueil">Accueil</a></li>
                 <li class="service-item"><a href="#about">À propos</a></li>
                 <li class="service-item"><a href="#services">Services</a></li>
                 <li class="service-item"><a href="#projects">Projets</a></li>
@@ -22,14 +22,16 @@
                 <li><button class="btn" id="toggle-theme"> <a><img class="icon" id="theme-icon"
                                 src="./assets/icon/sun.svg" width="20" height="20" /></a></button></li>
             </ul>
-
+            <div class="menu-icon">
+                <img src="/assets/icon/menu-icon.svg" id="menu-icon" alt="menu-icon" width="20" height="20"/>
+            </div>
         </nav>
     </header>
     <!--Section de presentation -->
     <main class="container">
         <section class="bg">
             <div class="bg-calque">
-                <section class="section greeting">
+                <div class="section greeting" id="accueil">
                     <div class="greeting-text">
                         <strong>Bonjour, c'est <span>Emmanuel Kouadio</span></strong>
                         <b>je suis developpeur <span id="element"></span></b>
@@ -51,14 +53,7 @@
                         <button type="button" class="btn download"><a href="./assets/cv/mon_cv-temp.pdf"
                                 target="_blank">Télécharger CV</a></button>
                     </div>
-
-                    <!--<div class="greeting-wrapper">
-                    <div class="greeting-image">
-                        <img src="/assets/images/profile.png" alt="Profil" class="profile-img">
-                    </div>
-                </div>-->
-
-                </section>
+                </div>
             </div>
 
         </section>
@@ -88,17 +83,17 @@
         <section id="services" class="section services">
             <h2 class="title">Services</h2>
             <ul>
-                <li>
+                <li class="serv-item">
                     <img src="./assets/icon/back-vr.svg" alt="database" width="100" height="100">
                     <h3>Développement Backend</h3>
                     <p>Conception d’API REST sécurisées avec Java, Spring Boot et MySQL/PostgreSQL.</p>
                 </li>
-                <li>
+                <li class="serv-item">
                     <img src="./assets/icon/android.svg" alt="database" width="100" height="100">
                     <h3>Développement Android</h3>
                     <p>Applications mobiles modernes avec Kotlin, Jetpack Compose et intégration d’API.</p>
                 </li>
-                <li>
+                <li class="serv-item">
                     <img src="./assets/icon/system-line-s.svg" alt="database" width="100" height="100">
                     <h3>Applications d’entreprise</h3>
                     <p>Solutions logicielles adaptées aux besoins métiers (ERP, gestion scolaire, reporting PDF).</p>

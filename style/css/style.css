@@ -50,9 +50,9 @@ nav {
   --none: 0;
   --width-90: 90%;
   --general-text-color: #9ac7f1;
-  --black : #000;
+  --black: #000;
+  --service-item : #fff;
 }
-
 
 a {
   color: var(--second-text-color);
@@ -69,7 +69,8 @@ a {
   --interractive-component: #113555;
   --background: #0d141f;
   color: #ffffff;
-   --interractive-component-hover: #00000077;
+  --interractive-component-hover: #00000077;
+  --service-item : #031a2e;
 }
 
 * {
@@ -88,8 +89,10 @@ body {
 .container {
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
-  width: 100%;
+  overflow-y: auto; /* active le scroll */
+  height: 100vh;
 }
+
 .bg {
   width: 100%;
   background: url("/assets/images/bg.jpeg");
@@ -99,7 +102,9 @@ body {
 }
 
 .section {
+  height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .header {
@@ -291,8 +296,8 @@ b {
   height: 80%;
 }
 
-.bg-calque{
-    background: var(--interractive-component-hover);
+.bg-calque {
+  background: var(--interractive-component-hover);
 }
 
 .greeting-image {
@@ -405,6 +410,14 @@ h2 {
   gap: 10px;
   border: 1px solid var(--border-color);
   border-radius: 15px;
+  background-color: var(--service-item);
+  box-shadow: 0px 0px 6px var(--box-color);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.services ul li:hover{
+    box-shadow: 0px 0px 18px var(--box-color);
 }
 
 .services ul li p {
@@ -433,10 +446,9 @@ h2 {
   flex-direction: column;
   width: 30%;
   gap: 10px;
-  background-color: var(--box-color);
+  background-color: var(--service-item);
   padding: 15px;
   border-radius: 15px;
-  color: var(--black);
 }
 
 h3 {
