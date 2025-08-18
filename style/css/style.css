@@ -148,6 +148,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   gap: var(--gap);
+  transition: all .5s;
 }
 
 li.service-item {
