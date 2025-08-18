@@ -8,7 +8,8 @@ const menuIcon = document.querySelector("#menu-icon");
 const container = document.querySelector(".container"); // scrollable container
 const sections = [...container.querySelectorAll(".section")];
 const menuLinks = [...document.querySelectorAll(".service-item a")];
-
+const service = document.querySelector(".header .service")
+service.style.maxHeight = "0px"
 // Associer id de section → lien
 const linkById = Object.fromEntries(
   menuLinks.map(a => [a.getAttribute("href").slice(1), a])
@@ -31,6 +32,21 @@ ScrollReveal().reveal('.greeting-text', { origin: 'top' });
 
 // ---- Theme toggle ----
 toggleTheme.addEventListener("click", changeTheme);
+
+menuIcon.addEventListener("click",event=>{
+    displayMenu()
+})
+
+function displayMenu(){
+    if(service.style.maxHeight == "0px"){
+        service.style.maxHeight = "300px"
+         service.style.padding = "15px"
+    }else{
+        service.style.maxHeight = "0px"
+        service.style.padding = "0px"
+    }
+
+}
 
 function changeTheme() {
   body.classList.toggle("dark-mod");
